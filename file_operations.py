@@ -28,3 +28,7 @@ with open("writeFileList2.txt","w") as file:
 	list_b=["new","list","yay!"]
 	for x  in list_b:
 		file.write(x+"\n")
+
+#writing json string to file
+import json
+##complete it later on
