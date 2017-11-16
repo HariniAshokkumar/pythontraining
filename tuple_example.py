@@ -9,3 +9,6 @@ for each_car in Garage:
 #checking if an element is present in a list can be done in an if statement
 if ("Honda" in Garage):
 	print ("Honda exists!")
+
+
+# check the above example. not sure if it is correct
