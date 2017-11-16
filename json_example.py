@@ -15,8 +15,11 @@ dict_a["name"]="Batman"
 list_b.append(dict_a.copy())
 print (list_b)
 
+#converts the list to json
+#dumps takes an object and produces a string
 data=json.dumps(list_a)
 print (data)
 
+#load would take a file-like object, read the data from that object, and use that string to create an object
 data2=json.loads(data)
 print (data2)
