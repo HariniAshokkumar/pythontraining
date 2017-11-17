@@ -5,7 +5,7 @@ app = Flask(__name__)
 data1={"chart_type":"Bar","data":[{"name":"Fibonacci","values":[0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]},{"name":"Natural numbers","values":[1,2, 3, 4, 5, 6, 7, 8, 9, 10, 11]}]}
 data2={"chart_type":"Pie","data":[{"browser":"IE","usage":[19.5]},{"browser":"FF","usage":[36.6]},{"browser":"Chrome","usage":[36.3]},{"browser":"Safari","usage":[4.5]},{"browser":"Opera","usage":[2.3]}]}
 
-@app.route('/api/<charttype>',methods=["GET"]) #restricting the method to only POST method
+@app.route('/api/<charttype>',methods=["GET"])
 def create_chart(charttype):
 	return render_template('index.html',chart=create_barchart(data1))
 
