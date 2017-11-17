@@ -1,0 +1,2 @@
+ngpsql: to connect excel and postgresql database
+       https://github.com/npgsql/npgsql/releases
