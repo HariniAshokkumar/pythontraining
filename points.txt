@@ -1,2 +1,11 @@
 ngpsql: to connect excel and postgresql database
        https://github.com/npgsql/npgsql/releases
+
+postgresql.conf: if we want to access the db from other server, edit #listen_addresses in the file and add your ip
+
+pg_hba.conf: we can set password rules in this file ( md5 password or remove password for users )
+              md5: local all all 0.0.0.0/0 md5
+              remove password:  local all all 0.0.0.0/0 md5
+              
+
+
